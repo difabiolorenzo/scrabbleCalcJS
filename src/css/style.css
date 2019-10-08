@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Gotham'; /*a name to be used later*/
+    src: url('../font/Gotham\ Bold.otf'); /*URL to font*/
+}
+
+body {
+	margin: 0;
+	font-family: 'Gotham';
+	background-color: #27351f;
+	color: black;
+}
+
+.tile {
+    background-color: #f3ecd9;
+    height: 140px;
+    width: 140px;
+    border-radius: 15%;
+    margin: 0.5%;
+}
+
+.tile_upper_part {
+	width: 100%;
+	height: 70%;
+	}
+
+.tile_lower_part {
+		width: 100%;
+		height: 30%;
+	}
+
+.letter_placeolder {
+    font-size: 100px;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.score_placeolder {
+    font-size: 25px;
+    padding-left: 75%;
+}
+
+
+div#all_letter {
+    display: flex;
+    padding-top: 12.5%;
+}
+
+div#score {text-align: center;font-size: 80px;color: white;margin-top: 5%;}
