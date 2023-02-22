@@ -6,43 +6,65 @@
 body {
 	margin: 0;
 	font-family: 'Gotham';
-	background-color: #27351f;
+	background-color: #212c1b;
 	color: black;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
 }
+
+input#input, button {
+    height: 10vw;
+    width: 80vw;
+    font-size: 4em;
+    text-transform: uppercase;
+    border: 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+button {
+    width: unset;
+    font-size: unset;
+}
+
 
 .tile {
+    height: 5em;
+    width: 5em;
     background-color: #f3ecd9;
-    height: 140px;
-    width: 140px;
-    border-radius: 15%;
-    margin: 0.5%;
+    padding: 0.25vh;
+    margin: 0.25vh;
+    border-radius: 0.5em;
 }
-
-.tile_upper_part {
-	width: 100%;
-	height: 70%;
-	}
-
-.tile_lower_part {
-		width: 100%;
-		height: 30%;
-	}
-
-.letter_placeolder {
-    font-size: 100px;
-    padding-top: 5%;
-    text-align: center;
-}
-
-.score_placeolder {
-    font-size: 25px;
-    padding-left: 75%;
-}
-
 
 div#all_letter {
     display: flex;
-    padding-top: 12.5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5vh;
 }
 
-div#score {text-align: center;font-size: 80px;color: white;margin-top: 5%;}
+.tile_upper_part {
+    font-size: 4em;
+    text-align: center;
+}
+
+.tile_lower_part {
+    margin-right: 0.85vh;
+    font-size: 1em;
+    position: relative;
+    text-align: right;
+    margin-top: -1em;
+}
+
+div#score {
+    color: white;
+    padding: 5vh;
+    font-size: 5vh;
+}
+
+div#word_input {
+    display: flex;
+}
